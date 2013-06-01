@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 2675.0, 99.0, 1191.0, 523.0 ],
+		"rect" : [ 442.0, 744.0, 1191.0, 523.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 							"revision" : 7
 						}
 ,
-						"rect" : [ 296.0, 468.0, 4049.0, 513.0 ],
+						"rect" : [ 266.0, 327.0, 4049.0, 513.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -605,13 +605,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-49",
-									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 2570.25, 166.0, 167.0, 33.0 ],
-									"text" : "sprintf script newdefault in%i %i 25 inlet"
+									"patching_rect" : [ 2570.25, 196.0, 282.0, 20.0 ],
+									"text" : "sprintf script newdefault in%i %i 25 receive~ pan%i"
 								}
 
 							}
@@ -844,11 +843,11 @@
 									"fontsize" : 12.0,
 									"id" : "obj-26",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1188.25, 248.0, 243.0, 20.0 ],
-									"text" : "sprintf script newdefault out%i %i 350 outlet"
+									"patching_rect" : [ 1188.25, 248.0, 283.0, 20.0 ],
+									"text" : "sprintf script newdefault out%i %i 350 send~ pan%i"
 								}
 
 							}
@@ -1376,6 +1375,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-26", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 1197.75, 228.0, 1461.75, 228.0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1597,6 +1606,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-49", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 2579.75, 176.5, 2842.75, 176.5 ],
+									"source" : [ "obj-47", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-49", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1767,15 +1786,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-62", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-61", 0 ]
 								}
 
 							}

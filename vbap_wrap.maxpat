@@ -259,8 +259,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 31.0, 137.0, 20.0 ],
-					"text" : "receive speaker_angles"
+					"patching_rect" : [ 45.0, 31.0, 107.0, 20.0 ],
+					"text" : "receive sp_angles"
 				}
 
 			}
@@ -500,11 +500,6 @@
 					"source" : [ "obj-71", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "vbap.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

@@ -12,5 +12,6 @@
 		"distance" : [0, 0, 0, 0, 0],
 		"spread" : [0, 0, 0, 0, 0]
 		},
-	"sourcefiles" : ["path1", "path2"]
+	"sourcefiles" : ["null", "null", "null", "null", "null", "null", "null", "null" ],
+	"outputs" : [ 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2 ]
 }

@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 538.0, 205.0, 640.0, 480.0 ],
+		"rect" : [ 1303.0, 398.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,13 +30,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-6",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 366.0, 109.0, 32.5, 20.0 ],
-					"text" : "+ 1"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 286.0, 209.0, 85.0, 20.0 ],
+					"text" : "r master_amp"
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 64.5, 209.0, 89.0, 20.0 ],
+					"patching_rect" : [ 64.5, 209.0, 157.75, 20.0 ],
 					"text" : "unpack 0 0 0 0"
 				}
 
@@ -133,8 +133,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.5, 31.0, 157.0, 20.0 ],
-					"text" : "receive source_coordinates"
+					"patching_rect" : [ 346.5, 31.0, 87.0, 20.0 ],
+					"text" : "receive so_list"
 				}
 
 			}
@@ -337,10 +337,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-48", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 244.5, 84.0, 375.5, 84.0 ],
+					"midpoints" : [ 244.5, 84.5, 375.5, 84.5 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -422,10 +422,11 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 1 ],
+					"destination" : [ "obj-13", 4 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
+					"midpoints" : [ 295.5, 251.0, 238.5, 251.0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -434,7 +435,7 @@
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-66", 1 ]
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}
@@ -443,7 +444,7 @@
 					"destination" : [ "obj-69", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-66", 2 ]
+					"source" : [ "obj-66", 1 ]
 				}
 
 			}

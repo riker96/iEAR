@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 279.0, 664.0, 640.0, 480.0 ],
+		"rect" : [ 1407.0, 794.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,20 +51,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 286.0, 200.0, 85.0, 20.0 ],
 					"text" : "r master_amp"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-71",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 444.0, 267.0, 125.0, 20.0 ],
-					"text" : "receive speakercount"
 				}
 
 			}
@@ -147,36 +133,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.5, 31.0, 87.0, 20.0 ],
-					"text" : "receive so_list"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 444.0, 301.0, 32.5, 20.0 ],
-					"text" : "* 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 85.25, 383.0, 70.0, 20.0 ],
-					"text" : "zl group 18"
+					"patching_rect" : [ 346.5, 31.0, 115.0, 20.0 ],
+					"text" : "receive json_so_list"
 				}
 
 			}
@@ -273,8 +231,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 31.0, 107.0, 20.0 ],
-					"text" : "receive sp_angles"
+					"patching_rect" : [ 45.0, 31.0, 136.0, 20.0 ],
+					"text" : "receive json_sp_angles"
 				}
 
 			}
@@ -418,25 +376,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 453.5, 360.0, 145.75, 360.0 ],
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -527,14 +466,10 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-71", 0 ]
-				}
-
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "vbap.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
